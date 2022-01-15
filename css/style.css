@@ -1,0 +1,239 @@
+
+
+
+body{
+    margin: 0;
+    background: #222;
+    font-family: 'Work Sans',sans-serif;
+    font-weight: 300;
+                                                      /*BACKGROUND PART*/
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+                                                     /*BACKGROUND FINISHED*/
+}
+
+                                                       /*NAVIGATION PART*/
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background: #55d6aa;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav{
+    float: right;
+}
+.logo{
+
+    float: left;
+    height: 60px;
+    width: 110px;
+    padding: 10px 0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left:100px ;
+    padding-top: 32px;
+
+    position: relative;
+}
+nav a{
+    color:#444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color :#000;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top:0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width: 100%;
+}
+                                            /*NAVIGATION FINISHED*/
+
+                                                    /*LOGIN PART*/
+.wrapper{
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    margin:auto;
+    margin-top: 10%;
+}
+.wrapper .title{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(85,214,170,1) 100%);
+}
+.wrapper form{
+    padding:  10px 30px 30px;
+}
+.wrapper form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.wrapper form .field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 25px;
+    border:1px solid lightgrey;
+    outline: none;
+    transition: 0.3s ease;
+    font-size: 17px;
+}
+.wrapper form .field input:focus,
+.wrapper form .field input:valid{
+    border-color: #4158d0;
+}
+.wrapper form .field label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: #999;
+}
+.wrapper form .field input:focus ~ label,
+.wrapper form .field input:valid ~ label{
+    top:0%;
+    font-size :16px;
+    color: #4158d0;
+    background:#fff;
+    transform: translateY(-20%);
+}
+
+.wrapper form .field input[type="submit"]{
+    color: #fff;
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(85,214,170,1) 100%);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding-left: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field input[type="submit"]:active{
+    transform: scale(0.95);
+}
+                                                /*LOGIN PART FINISHED*/
+
+
+
+
+                                                   /*ABOUT ME PART*/
+
+
+
+.card{
+
+    position: fixed;
+    margin-left: 80vh;
+    margin-top: 6%;
+
+    font-family: "Candara",sans-serif;
+    width: 340px;
+    height: 500px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+.card-image img{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-image img{
+    z-index:1;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.profile-image img:hover{
+    transform: scale(1.1);
+}
+
+.card-content h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+.card-content p{
+    font-size: 16px;
+    text-align: justify;
+    padding: 0 20px 5px 20px;
+}
+
+
+.icons{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding:  0 14px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.icons a:hover{
+    transform: scale(1.5);
+}
+
+.usertype{
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
